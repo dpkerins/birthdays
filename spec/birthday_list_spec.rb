@@ -5,13 +5,13 @@ describe BirthdayList do
   it "returns a list of birthdays" do
     #Arrange
     birthday_list = BirthdayList.new
-    birthday = Birthday.new("April", 30, 1990)
+    #birthday = Birthday.new("April", 30, 1990)
     birthday = double("birthday double", :join_date => "April 30, 1990")
-    birthday.join_date
+    birthday_full = birthday.join_date
     expected_output = "April 30, 1990"
     
     #Act
-    birthday_list.add(birthday)
+    birthday_list.add(birthday_full)
 
     #Assert
     expect(birthday_list.print_list).to(eq(expected_output))
