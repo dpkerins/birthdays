@@ -8,4 +8,8 @@ class Birthday
     @day = day
     @year = year
   end
+
+  def join_date(month, day, year)
+  end
+
 end

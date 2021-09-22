@@ -6,6 +6,8 @@ describe BirthdayList do
     #Arrange
     birthday_list = BirthdayList.new
     birthday = Birthday.new("April", 30, 1990)
+    birthday = double("birthday double", :join_date => "April 30, 1990")
+    birthday.join_date
     expected_output = "April 30, 1990"
     
     #Act
